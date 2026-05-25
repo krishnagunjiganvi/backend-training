@@ -1,0 +1,14 @@
+const mongoose=require("mongoose");
+const notescheme = new mongoose.Schema({
+    heading:{
+        type:String,
+        required:true,
+        uppercase:true
+    },
+    content:{
+        type:String,
+        required:true
+    }
+    })
+    module.exports = mongoose.model("notes",notescheme);
+
